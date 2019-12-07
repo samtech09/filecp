@@ -99,13 +99,13 @@ func readLines(path string) ([]string, error) {
 
 func printUsage(iserr bool) {
 	fmt.Println("filecp - utility to copy files from different locations to specific folder with hierarchy")
-    fmt.Printf("Version $s build %s\n", appVer, buildVer)
+	fmt.Printf("Version %s build %s\n", appVer, buildVer)
 	if iserr {
 		fmt.Println(" ")
 		fmt.Println("Error:  Insufficient input")
 		fmt.Println(" ")
 	}
-	fmt.Println("Syntax:  filecp -i [infile] -o [destfolder]")
+	fmt.Println("Syntax:  filecp -f [infile] -o [destfolder]")
 	fmt.Println(" ")
 	flag.Usage()
 	fmt.Println(" ")
